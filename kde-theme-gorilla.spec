@@ -141,8 +141,8 @@ install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kicker/pics,kdisplay/color-schemes/}
 
 mv kde/color-scheme/*  $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
 mv kde/gorilla_iceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/gorilla/
-mv kde/splash/*	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/gorilla/
-echo > $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/gorilla/Theme.rc << _EOF_
+mv kde/splash/*	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/
+echo > $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/Theme.rc << _EOF_
 [KSplash Theme: gorilla]
 Name = Gorilla Splash Theme
 Description = Gorilla Splash Theme.
@@ -179,7 +179,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-splash-%{_theme}
 %defattr(644,root,root,755)
-%{_datadir}/apps/ksplash/gorilla/
+%{_datadir}/apps/ksplash/Themes/gorilla/
 
 
 %files -n kde-colorscheme-%{_theme}
