@@ -131,11 +131,11 @@ Requires:       kdebase-kicker >= 9:3.1.90.030726-2
 Kicker sidebar from %{_theme}.
 
 %description -n kde-kside-%{_theme} -l pl
-Boczny pasek do menu kde z tematu %{_theme}.
+Boczny pasek do menu kde z motywu %{_theme}.
 
 %package -n xmms-skin-%{_theme}
 Summary:        An xmms skin %{_theme} theme
-Summary(pl):    Skin dla xmms'a z tematu %{_theme}
+Summary(pl):    Skórka dla XMMS-a z motywu %{_theme}
 Group:          Themes
 Requires:       xmms
 
@@ -143,8 +143,7 @@ Requires:       xmms
 An xmms skin %{_theme} theme.
 
 %description -n xmms-skin-%{_theme} -l pl
-Skin dla xmms'a z tematu %{_theme}.
-
+Skórka dla XMMS-a z motywu %{_theme}.
 
 %prep
 %setup -q -n Gorilla -a1
@@ -152,12 +151,12 @@ Skin dla xmms'a z tematu %{_theme}.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_iconsdir}/gorilla,%{_datadir}/apps/kwin/icewm-themes/gorilla,%{_datadir}/apps/ksplash/Themes/gorilla}
-install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kicker/pics,kdisplay/color-schemes/}
-install -d $RPM_BUILD_ROOT%{_datadir}/xmms/Skins/
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kicker/pics,kdisplay/color-schemes}
+install -d $RPM_BUILD_ROOT%{_datadir}/xmms/Skins
 
-mv kde/color-scheme/*  $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
-mv kde/gorilla_iceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/gorilla/
-mv kde/splash/*	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/
+mv kde/color-scheme/*  $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
+mv kde/gorilla_iceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/gorilla
+mv kde/splash/*	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla
 cat > $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/Theme.rc << _EOF_
 [KSplash Theme: gorilla]
 Name = Gorilla Splash Theme
@@ -166,12 +165,12 @@ Engine = Default
 Icons Flashing = true
 _EOF_
 rm -rf kde
-mv gorilla\ kside/* $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
+mv gorilla\ kside/* $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics
 rm -rf gorilla\ kside
 mv [!R]* $RPM_BUILD_ROOT%{_iconsdir}/gorilla 
 
 install -d $RPM_BUILD_ROOT%{_datadir}/wallpapers
-install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/wallpapers/
+install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/wallpapers
 install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/xmms/Skins/Gorilla.zip
 
 %clean
@@ -189,7 +188,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-icons-%{_theme}
 %defattr(644,root,root,755)
-%{_iconsdir}/gorilla/
+%{_iconsdir}/gorilla
 
 %files -n kde-kside-%{_theme}
 %defattr(644,root,root,755)
@@ -197,7 +196,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-splash-%{_theme}
 %defattr(644,root,root,755)
-%{_datadir}/apps/ksplash/Themes/gorilla/
+%{_datadir}/apps/ksplash/Themes/gorilla
 
 %files -n xmms-skin-%{_theme}
 %defattr(644,root,root,755)
@@ -209,4 +208,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n kde-decoration-%{_theme}
 %defattr(644,root,root,755)
-%{_datadir}/apps/kwin/icewm-themes/gorilla/
+%{_datadir}/apps/kwin/icewm-themes/gorilla
