@@ -61,10 +61,10 @@ bez slickera.
 #bez slickera.
 
 %package -n kde-icons-%{_theme}
-Summary:        KDE icons - %{_theme}
-Summary(pl):    Motyw ikon do KDE - %{_theme}
-Group:          Themes
-Requires:       kdelibs
+Summary:	KDE icons - %{_theme}
+Summary(pl):	Motyw ikon do KDE - %{_theme}
+Group:		Themes
+Requires:	kdelibs
 
 %description -n kde-icons-%{_theme}
 %{_name} is a KDE port of a famous GNOME SVG icon theme.
@@ -86,10 +86,10 @@ A wallpaper to go with %{_theme} theme.
 Tapeta pasuj±ca do motywu %{_theme}.
 
 %package -n kde-decoration-%{_theme}
-Summary:        Icewm window decoration for kwin - %{_theme}
-Summary(pl):    Dekoracja icewm dla kwin - %{_theme}
-Group:          Themes
-Requires:       kde-decoration-icewm
+Summary:	Icewm window decoration for kwin - %{_theme}
+Summary(pl):	Dekoracja icewm dla kwin - %{_theme}
+Group:		Themes
+Requires:	kde-decoration-icewm
 
 %description -n kde-decoration-%{_theme}
 Icewm window decoration for kwin - %{_theme}.
@@ -98,10 +98,10 @@ Icewm window decoration for kwin - %{_theme}.
 Dekoracja icewm dla kwin - %{_theme}.
 
 %package -n kde-colorscheme-%{_theme}
-Summary:        Color scheme for %{_theme} theme
-Summary(pl):    Schemat kolorów dla motywu %{_theme}
-Group:          Themes
-Requires:       kdebase
+Summary:	Color scheme for %{_theme} theme
+Summary(pl):	Schemat kolorów dla motywu %{_theme}
+Group:		Themes
+Requires:	kdebase
 
 %description -n kde-colorscheme-%{_theme}
 Color scheme for %{_theme} theme.
@@ -110,10 +110,10 @@ Color scheme for %{_theme} theme.
 Schemat kolorów dla motywu %{_theme}.
 
 %package -n kde-splash-%{_theme}
-Summary:        Splash screen %{_theme} theme
-Summary(pl):    Obrazek startowy dla motywu %{_theme}
-Group:          Themes
-Requires:       kdebase >= 9:3.1.90
+Summary:	Splash screen %{_theme} theme
+Summary(pl):	Obrazek startowy dla motywu %{_theme}
+Group:		Themes
+Requires:	kdebase >= 9:3.1.90
 
 %description -n kde-splash-%{_theme}
 Splash screen %{_theme} theme.
@@ -123,11 +123,11 @@ Obrazek startowy dla motywu %{_theme}.
 
 %package -n kde-kside-%{_theme}
 Summary:	Kicker sidebar from %{_theme} 
-Summary(pl): 	Boczny pasek do menu kde z tematu %{_theme}
-Group:          Themes
+Summary(pl):	Boczny pasek do menu kde z tematu %{_theme}
+Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
-Requires:       kdebase-kicker >= 9:3.1.90.030726-2
+Requires:	kdebase-kicker >= 9:3.1.90.030726-2
 
 %description -n kde-kside-%{_theme}
 Kicker sidebar from %{_theme}.
@@ -136,10 +136,10 @@ Kicker sidebar from %{_theme}.
 Boczny pasek do menu kde z motywu %{_theme}.
 
 %package -n xmms-skin-%{_theme}
-Summary:        An xmms skin %{_theme} theme
-Summary(pl):    Skórka dla XMMS-a z motywu %{_theme}
-Group:          Themes
-Requires:       xmms
+Summary:	An xmms skin %{_theme} theme
+Summary(pl):	Skórka dla XMMS-a z motywu %{_theme}
+Group:		Themes
+Requires:	xmms
 
 %description -n xmms-skin-%{_theme}
 An xmms skin %{_theme} theme.
