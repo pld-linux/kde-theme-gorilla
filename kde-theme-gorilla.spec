@@ -4,11 +4,11 @@ Summary:	KDE theme - %{_theme}
 Summary(pl):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
-Release:	0.030726
+Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://www.starsurvivor.net/linux/gorilla/%{_theme}-current-07.26.03.tar.bz2
-# Source0-md5:	b377e195e24fb81732c48bc7feede8a2
+Source0:	http://www.starsurvivor.net/linux/gorilla/Gorilla-v%{version}.tar.bz2
+# Source0-md5:	3f371946b973e19461a126df75a0cebb
 Source1:	http://www.kde-look.org/content/files/7124-%{_theme}_kside.tar.gz
 # Source1-md5:	c1a3f17ab510cc7c4202fdf2a4892f16
 Source2:	http://developer.ximian.com/themes/backgrounds/simple.png
@@ -109,7 +109,7 @@ Schemat kolorów dla motywu %{_theme}.
 Summary:        Splash screen %{_theme} theme
 Summary(pl):    Obrazek startowy dla motywu %{_theme}
 Group:          Themes
-Requires:       kdebase
+Requires:       kdebase >= 9:3.1.90
 
 %description -n kde-splash-%{_theme}
 Splash screen %{_theme} theme.
@@ -136,13 +136,13 @@ Boczny pasek do menu kde z tematu %{_theme}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_iconsdir}/gorilla,%{_datadir}/apps/kwin/icewm-themes/gorilla,%{_datadir}/apps/ksplash/gorilla}
+install -d $RPM_BUILD_ROOT{%{_iconsdir}/gorilla,%{_datadir}/apps/kwin/icewm-themes/gorilla,%{_datadir}/apps/ksplash/Themes/gorilla}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kicker/pics,kdisplay/color-schemes/}
 
 mv kde/color-scheme/*  $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
 mv kde/gorilla_iceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/gorilla/
 mv kde/splash/*	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/
-echo > $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/Theme.rc << _EOF_
+cat > $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/gorilla/Theme.rc << _EOF_
 [KSplash Theme: gorilla]
 Name = Gorilla Splash Theme
 Description = Gorilla Splash Theme.
@@ -151,6 +151,7 @@ Icons Flashing = true
 _EOF_
 rm -rf kde
 mv gorilla\ kside/* $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics/
+rm -rf gorilla\ kside
 mv [!R]* $RPM_BUILD_ROOT%{_iconsdir}/gorilla 
 
 install -d $RPM_BUILD_ROOT%{_datadir}/wallpapers
