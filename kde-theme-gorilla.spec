@@ -13,6 +13,8 @@ Source1:	http://www.kde-look.org/content/files/7124-%{_theme}_kside.tar.gz
 # Source1-md5:	c1a3f17ab510cc7c4202fdf2a4892f16
 Source2:	http://developer.ximian.com/themes/backgrounds/simple.png
 # Source2-md5:	e3d187c1b6cbe7fb90ed4220eaeba1af
+Source3:	http://www.studiotwentyeight.net/files/Gorilla.wsz
+# Source3-md5:	f08e6a347f3399dc06ad1cc3220e37ed
 URL:		http://www.kde-look.org/content/show.php?content=6927
 # Also: http://www.kde-look.org/content/show.php?content=7075
 # Also: http://www.kde-look.org/content/show.php?content=7003
@@ -131,6 +133,19 @@ Kicker sidebar from %{_theme}.
 %description -n kde-kside-%{_theme} -l pl
 Boczny pasek do menu kde z tematu %{_theme}.
 
+%package -n xmms-skin-%{_theme}
+Summary:        An xmms skin %{_theme} theme
+Summary(pl):    Skin dla xmms'a z tematu %{_theme}
+Group:          Themes
+Requires:       xmms
+
+%description -n xmms-skin-%{_theme}
+An xmms skin %{_theme} theme.
+
+%description -n xmms-skin-%{_theme} -l pl
+Skin dla xmms'a z tematu %{_theme}.
+
+
 %prep
 %setup -q -n Gorilla -a1
 
@@ -138,6 +153,7 @@ Boczny pasek do menu kde z tematu %{_theme}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_iconsdir}/gorilla,%{_datadir}/apps/kwin/icewm-themes/gorilla,%{_datadir}/apps/ksplash/Themes/gorilla}
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/{kicker/pics,kdisplay/color-schemes/}
+install -d $RPM_BUILD_ROOT%{_datadir}/xmms/Skins/
 
 mv kde/color-scheme/*  $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
 mv kde/gorilla_iceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/gorilla/
@@ -156,6 +172,7 @@ mv [!R]* $RPM_BUILD_ROOT%{_iconsdir}/gorilla
 
 install -d $RPM_BUILD_ROOT%{_datadir}/wallpapers
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/wallpapers/
+install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/xmms/Skins/Gorilla.zip
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -182,6 +199,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/apps/ksplash/Themes/gorilla/
 
+%files -n xmms-skin-%{_theme}
+%defattr(644,root,root,755)
+%{_datadir}/xmms/Skins/Gorilla.zip
 
 %files -n kde-colorscheme-%{_theme}
 %defattr(644,root,root,755)
