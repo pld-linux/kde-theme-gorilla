@@ -202,7 +202,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n xmms-skin-%{_theme}
 %defattr(644,root,root,755)
-%{xmms_datadir}/Gorilla.zip
+%{xmms_datadir}/Skins/Gorilla.zip
 
 %files -n kde-colorscheme-%{_theme}
 %defattr(644,root,root,755)
