@@ -136,13 +136,13 @@ Kicker sidebar from %{_theme}.
 Boczny pasek do menu kde z motywu %{_theme}.
 
 %package -n xmms-skin-%{_theme}
-Summary:	An xmms skin %{_theme} theme
+Summary:	An XMMS skin %{_theme} theme
 Summary(pl):	Skórka dla XMMS-a z motywu %{_theme}
 Group:		Themes
 Requires:	xmms
 
 %description -n xmms-skin-%{_theme}
-An xmms skin %{_theme} theme.
+An XMMS skin %{_theme} theme.
 
 %description -n xmms-skin-%{_theme} -l pl
 Skórka dla XMMS-a z motywu %{_theme}.
