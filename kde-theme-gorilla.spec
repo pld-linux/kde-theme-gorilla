@@ -28,7 +28,7 @@ BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _htmldir        %{_docdir}/kde/HTML
+%define		_htmldir	%{_docdir}/kde/HTML
 
 %description
 %{_theme} is a slicker theme that was designed to look nice with
