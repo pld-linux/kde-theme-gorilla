@@ -122,7 +122,7 @@ Splash screen %{_theme} theme.
 Obrazek startowy dla motywu %{_theme}.
 
 %package -n kde-kside-%{_theme}
-Summary:	Kicker sidebar from %{_theme} 
+Summary:	Kicker sidebar from %{_theme}
 Summary(pl):	Boczny pasek do menu kde z tematu %{_theme}
 Group:		Themes
 Obsoletes:	kde-kside
@@ -169,7 +169,7 @@ _EOF_
 rm -rf kde
 mv gorilla\ kside/* $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics
 rm -rf gorilla\ kside
-mv [!R]* $RPM_BUILD_ROOT%{_iconsdir}/gorilla 
+mv [!R]* $RPM_BUILD_ROOT%{_iconsdir}/gorilla
 
 install -d $RPM_BUILD_ROOT%{_datadir}/wallpapers
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/wallpapers
