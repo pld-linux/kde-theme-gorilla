@@ -4,7 +4,7 @@ Summary:	KDE theme - %{_theme}
 Summary(pl):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Themes
 Source0:	http://www.starsurvivor.net/linux/gorilla/Gorilla-v%{version}.tar.bz2
@@ -23,7 +23,6 @@ URL:		http://www.kde-look.org/content/show.php?content=6927
 BuildRequires:	rpmbuild(macros) >= 1.125
 Requires:	kde-wallpaper-%{_theme}
 Requires:	kde-icons-%{_theme}
-Requires:	kde-kside-%{_theme}
 Requires:	kde-splash-%{_theme}
 Requires:	kde-colorscheme-%{_theme}
 Requires:	kde-decoration-%{_theme}
