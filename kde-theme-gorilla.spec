@@ -4,7 +4,7 @@ Summary:	KDE theme - %{_theme}
 Summary(pl):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Themes
 Source0:	http://www.starsurvivor.net/linux/gorilla/Gorilla-v%{version}.tar.bz2
@@ -26,6 +26,12 @@ BuildRequires:	freetype-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
+Requires:	kde-wallpaper-%{_theme}
+Requires:	kde-icons-%{_theme}
+Requires:	kde-kside-%{_theme}
+Requires:	kde-splash-%{_theme}
+Requires:	kde-colorscheme-%{_theme}
+Requires:	kde-decoration-%{_theme}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_htmldir	%{_docdir}/kde/HTML
@@ -166,6 +172,7 @@ Description = Gorilla Splash Theme.
 Engine = Default
 Icons Flashing = true
 _EOF_
+
 rm -rf kde
 mv gorilla\ kside/* $RPM_BUILD_ROOT%{_datadir}/apps/kicker/pics
 rm -rf gorilla\ kside
@@ -177,6 +184,8 @@ install %{SOURCE3} $RPM_BUILD_ROOT%{xmms_datadir}/Skins/Gorilla.zip
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
 
 #files -n kde-style-%{_theme}
 #defattr(644,root,root,755)
