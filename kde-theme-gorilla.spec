@@ -4,7 +4,7 @@ Summary:	KDE theme - %{_theme}
 Summary(pl):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Themes
 Source0:	http://www.starsurvivor.net/linux/gorilla/Gorilla-v%{version}.tar.bz2
@@ -20,18 +20,14 @@ URL:		http://www.kde-look.org/content/show.php?content=6927
 # Also: http://www.kde-look.org/content/show.php?content=7003
 # Also: http://www.kde-look.org/content/show.php?content=7081
 # Also: http://www.kde-look.org/content/show.php?content=7124
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	freetype-devel
-BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.125
-BuildRequires:	xmms-devel
 Requires:	kde-wallpaper-%{_theme}
 Requires:	kde-icons-%{_theme}
 Requires:	kde-kside-%{_theme}
 Requires:	kde-splash-%{_theme}
 Requires:	kde-colorscheme-%{_theme}
 Requires:	kde-decoration-%{_theme}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_htmldir	%{_docdir}/kde/HTML
@@ -82,8 +78,7 @@ Requires:	kdelibs
 Summary:	KDE wallpaper - %{_theme}
 Summary(pl):	Tapeta do KDE - %{_theme}
 Group:		Themes
-# Contains /usr/share/wallpapers
-Requires:	kdebase
+Requires:	/usr/share/wallpapers
 
 %description -n kde-wallpaper-%{_theme}
 A wallpaper to go with %{_theme} theme.
@@ -107,7 +102,7 @@ Dekoracja icewm dla kwin - %{_theme}.
 Summary:	Color scheme for %{_theme} theme
 Summary(pl):	Schemat kolorów dla motywu %{_theme}
 Group:		Themes
-Requires:	kdebase
+Requires:	kdebase-desktop
 
 %description -n kde-colorscheme-%{_theme}
 Color scheme for %{_theme} theme.
@@ -119,7 +114,7 @@ Schemat kolorów dla motywu %{_theme}.
 Summary:	Splash screen %{_theme} theme
 Summary(pl):	Obrazek startowy dla motywu %{_theme}
 Group:		Themes
-Requires:	kdebase >= 9:3.1.90
+Requires:	kdebase-desktop >= 9:3.1.90
 
 %description -n kde-splash-%{_theme}
 Splash screen %{_theme} theme.
@@ -133,7 +128,7 @@ Summary(pl):	Boczny pasek do menu kde z tematu %{_theme}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
-Requires:	kdebase-kicker >= 9:3.1.90.030726-2
+Requires:	kdebase-desktop >= 9:3.1.90.030726-2
 
 %description -n kde-kside-%{_theme}
 Kicker sidebar from %{_theme}.
