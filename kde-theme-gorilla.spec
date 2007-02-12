@@ -1,7 +1,7 @@
 %define		_theme 	gorilla
 
 Summary:	KDE theme - %{_theme}
-Summary(pl):	Motyw KDE - %{_theme}
+Summary(pl.UTF-8):   Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
 Release:	5
@@ -36,9 +36,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 slicker. To developer's surprise, this style looks good even without
 slicker.
 
-%description -l pl
-%{_theme} to motyw stworzony by wspó³gra³ z aplikacj± slicker. Ku
-zaskoczeniu twórców, styl ten jednak okaza³ siê piêknie wygl±daæ nawet
+%description -l pl.UTF-8
+%{_theme} to motyw stworzony by wspÃ³Å‚graÅ‚ z aplikacjÄ… slicker. Ku
+zaskoczeniu twÃ³rcÃ³w, styl ten jednak okazaÅ‚ siÄ™ piÄ™knie wyglÄ…daÄ‡ nawet
 bez slickera.
 
 ####
@@ -57,73 +57,73 @@ bez slickera.
 ##slicker.
 
 #%%description -n kde-style-%{_theme} -l pl
-#%%{_theme} to styl stworzony by wspó³gra³ z aplikacj± slicker. Ku
-#zaskoczeniu twórców, styl ten jednak okaza³ siê piêknie wygl±daæ nawet
+#%%{_theme} to styl stworzony by wspÃ³Å‚graÅ‚ z aplikacjÄ… slicker. Ku
+#zaskoczeniu twÃ³rcÃ³w, styl ten jednak okazaÅ‚ siÄ™ piÄ™knie wyglÄ…daÄ‡ nawet
 #bez slickera.
 
 %package -n kde-icons-%{_theme}
 Summary:	KDE icons - %{_theme}
-Summary(pl):	Motyw ikon do KDE - %{_theme}
+Summary(pl.UTF-8):   Motyw ikon do KDE - %{_theme}
 Group:		Themes
 Requires:	kdelibs
 
 %description -n kde-icons-%{_theme}
 %{_name} is a KDE port of a famous GNOME SVG icon theme.
 
-%description -n kde-icons-%{_theme} -l pl
-%{_name} to port do KDE s³ynnego tematu ikon z GNOME.
+%description -n kde-icons-%{_theme} -l pl.UTF-8
+%{_name} to port do KDE sÅ‚ynnego tematu ikon z GNOME.
 
 %package -n kde-wallpaper-%{_theme}
 Summary:	KDE wallpaper - %{_theme}
-Summary(pl):	Tapeta do KDE - %{_theme}
+Summary(pl.UTF-8):   Tapeta do KDE - %{_theme}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
 %description -n kde-wallpaper-%{_theme}
 A wallpaper to go with %{_theme} theme.
 
-%description -n kde-wallpaper-%{_theme} -l pl
-Tapeta pasuj±ca do motywu %{_theme}.
+%description -n kde-wallpaper-%{_theme} -l pl.UTF-8
+Tapeta pasujÄ…ca do motywu %{_theme}.
 
 %package -n kde-decoration-%{_theme}
 Summary:	Icewm window decoration for kwin - %{_theme}
-Summary(pl):	Dekoracja icewm dla kwin - %{_theme}
+Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_theme}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
 %description -n kde-decoration-%{_theme}
 Icewm window decoration for kwin - %{_theme}.
 
-%description -n kde-decoration-%{_theme} -l pl
+%description -n kde-decoration-%{_theme} -l pl.UTF-8
 Dekoracja icewm dla kwin - %{_theme}.
 
 %package -n kde-colorscheme-%{_theme}
 Summary:	Color scheme for %{_theme} theme
-Summary(pl):	Schemat kolorów dla motywu %{_theme}
+Summary(pl.UTF-8):   Schemat kolorÃ³w dla motywu %{_theme}
 Group:		Themes
 Requires:	kdebase-desktop
 
 %description -n kde-colorscheme-%{_theme}
 Color scheme for %{_theme} theme.
 
-%description -n kde-colorscheme-%{_theme} -l pl
-Schemat kolorów dla motywu %{_theme}.
+%description -n kde-colorscheme-%{_theme} -l pl.UTF-8
+Schemat kolorÃ³w dla motywu %{_theme}.
 
 %package -n kde-splash-%{_theme}
 Summary:	Splash screen %{_theme} theme
-Summary(pl):	Obrazek startowy dla motywu %{_theme}
+Summary(pl.UTF-8):   Obrazek startowy dla motywu %{_theme}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
 %description -n kde-splash-%{_theme}
 Splash screen %{_theme} theme.
 
-%description -n kde-splash-%{_theme} -l pl
+%description -n kde-splash-%{_theme} -l pl.UTF-8
 Obrazek startowy dla motywu %{_theme}.
 
 %package -n kde-kside-%{_theme}
 Summary:	Kicker sidebar from %{_theme}
-Summary(pl):	Boczny pasek do menu kde z tematu %{_theme}
+Summary(pl.UTF-8):   Boczny pasek do menu kde z tematu %{_theme}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
@@ -132,20 +132,20 @@ Requires:	kdebase-desktop >= 9:3.1.90.030726-2
 %description -n kde-kside-%{_theme}
 Kicker sidebar from %{_theme}.
 
-%description -n kde-kside-%{_theme} -l pl
+%description -n kde-kside-%{_theme} -l pl.UTF-8
 Boczny pasek do menu kde z motywu %{_theme}.
 
 %package -n xmms-skin-%{_theme}
 Summary:	An XMMS skin %{_theme} theme
-Summary(pl):	Skórka dla XMMS-a z motywu %{_theme}
+Summary(pl.UTF-8):   SkÃ³rka dla XMMS-a z motywu %{_theme}
 Group:		Themes
 Requires:	xmms
 
 %description -n xmms-skin-%{_theme}
 An XMMS skin %{_theme} theme.
 
-%description -n xmms-skin-%{_theme} -l pl
-Skórka dla XMMS-a z motywu %{_theme}.
+%description -n xmms-skin-%{_theme} -l pl.UTF-8
+SkÃ³rka dla XMMS-a z motywu %{_theme}.
 
 %prep
 %setup -q -n Gorilla -a1
