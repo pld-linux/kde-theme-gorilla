@@ -1,7 +1,7 @@
 %define		_theme 	gorilla
 
 Summary:	KDE theme - %{_theme}
-Summary(pl.UTF-8):   Motyw KDE - %{_theme}
+Summary(pl.UTF-8):	Motyw KDE - %{_theme}
 Name:		kde-theme-%{_theme}
 Version:	1.0
 Release:	5
@@ -63,7 +63,7 @@ bez slickera.
 
 %package -n kde-icons-%{_theme}
 Summary:	KDE icons - %{_theme}
-Summary(pl.UTF-8):   Motyw ikon do KDE - %{_theme}
+Summary(pl.UTF-8):	Motyw ikon do KDE - %{_theme}
 Group:		Themes
 Requires:	kdelibs
 
@@ -75,7 +75,7 @@ Requires:	kdelibs
 
 %package -n kde-wallpaper-%{_theme}
 Summary:	KDE wallpaper - %{_theme}
-Summary(pl.UTF-8):   Tapeta do KDE - %{_theme}
+Summary(pl.UTF-8):	Tapeta do KDE - %{_theme}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -87,7 +87,7 @@ Tapeta pasująca do motywu %{_theme}.
 
 %package -n kde-decoration-%{_theme}
 Summary:	Icewm window decoration for kwin - %{_theme}
-Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_theme}
+Summary(pl.UTF-8):	Dekoracja icewm dla kwin - %{_theme}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
@@ -99,7 +99,7 @@ Dekoracja icewm dla kwin - %{_theme}.
 
 %package -n kde-colorscheme-%{_theme}
 Summary:	Color scheme for %{_theme} theme
-Summary(pl.UTF-8):   Schemat kolorów dla motywu %{_theme}
+Summary(pl.UTF-8):	Schemat kolorów dla motywu %{_theme}
 Group:		Themes
 Requires:	kdebase-desktop
 
@@ -111,7 +111,7 @@ Schemat kolorów dla motywu %{_theme}.
 
 %package -n kde-splash-%{_theme}
 Summary:	Splash screen %{_theme} theme
-Summary(pl.UTF-8):   Obrazek startowy dla motywu %{_theme}
+Summary(pl.UTF-8):	Obrazek startowy dla motywu %{_theme}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
@@ -123,7 +123,7 @@ Obrazek startowy dla motywu %{_theme}.
 
 %package -n kde-kside-%{_theme}
 Summary:	Kicker sidebar from %{_theme}
-Summary(pl.UTF-8):   Boczny pasek do menu kde z tematu %{_theme}
+Summary(pl.UTF-8):	Boczny pasek do menu kde z tematu %{_theme}
 Group:		Themes
 Obsoletes:	kde-kside
 Provides:	kde-kside
@@ -137,7 +137,7 @@ Boczny pasek do menu kde z motywu %{_theme}.
 
 %package -n xmms-skin-%{_theme}
 Summary:	An XMMS skin %{_theme} theme
-Summary(pl.UTF-8):   Skórka dla XMMS-a z motywu %{_theme}
+Summary(pl.UTF-8):	Skórka dla XMMS-a z motywu %{_theme}
 Group:		Themes
 Requires:	xmms
 
